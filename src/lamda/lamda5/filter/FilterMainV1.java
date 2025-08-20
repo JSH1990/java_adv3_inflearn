@@ -1,4 +1,4 @@
-package lamda.lamda5.Filter;
+package lamda.lamda5.filter;
 
 import java.util.ArrayList;
 import java.util.List;
