@@ -1,5 +1,7 @@
 package lamda.lamda5.filter;
 
+import lamda.lamda5.map.GenericFilter;
+
 import java.util.List;
 
 public class FilterMainV5 {
