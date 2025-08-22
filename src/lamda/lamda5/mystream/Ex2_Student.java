@@ -29,6 +29,8 @@ public class Ex2_Student {
         return highScoreNames;
     }
     private static List<String> lambda(List<Student> students) {
-        GenericFilter(students, s -> s.g)
+        List<Student> filtered = GenericFilter.filter(students, s -> s.getScore() >= 80);
+        List<String> map = GenericMapper.map(filtered, s -> s.getName());
+        return map;
     }
 }
