@@ -2,6 +2,7 @@ package lamda.lamda5.mystream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -37,5 +38,11 @@ public class MyStreamV3<T> {
 
     public List<T> toList(){
         return interalList;
+    }
+
+    public void forEach(Consumer<T> consumer){
+        for (T element : interalList) {
+            consumer.accept(element);
+        }
     }
 }
